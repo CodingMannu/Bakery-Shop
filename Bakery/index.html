@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetest Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/76a7f1ae5a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.jpeg" alt="logo"></a>
+            </div>
+            <div id="navbar">
+                <a href="#main" class="active">Home</a>
+                <a href="#services">Our Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact Us</a>
+                <div id="close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div id="menu">
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </header>
+        <section id="main">
+            <h1>Welcome to MyBakery</h1>
+            <p>A bakery is an establishment that produces and sells flour-based food baked in an oven such as bread,
+                cookies, cakes, donuts, pastries, and pies. Some retail bakeries are also categorized as cafés, serving
+                coffee and tea to customers who wish to consume the baked goods on the premises.</p>
+            <button>Order Now</button>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service_box">
+                <div class="item">
+                    <img src="images/Miniature cheesecake.jpg" alt="Miniature cheesecake">
+                    <a href="#">Miniature cheesecake</a>
+                </div>
+                <div class="item">
+                    <img src="images/Personal pies.webp" alt="Personal pies">
+                    <a href="#">Personal pies</a>
+                </div>
+                <div class="item">
+                    <img src="images/Chocolate strawberries.webp" alt="Chocolate strawberries">
+                    <a href="#">Chocolate strawberries</a>
+                </div>
+                <div class="item">
+                    <img src="images/Cannolis.webp" alt="Cannolis">
+                    <a href="#">Cannolis</a>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <div class="about_info">
+                <p><img src="images/logo.jpeg" alt="">Welcome to homemade. What does homemade mean to you? Is it
+                    something you cook or make for your
+                    family
+                    or
+                    the time with family or smells that build the memories? When I started this homemade baking
+                    business
+                    in
+                    April of 2012, it was with the idea that everything would be made from scratch. Mainly because
+                    of my
+                    own
+                    memories in the kitchen of cooking with my family. Coming from a big family, everything was made
+                    from
+                    scratch so never in a million years did I imagined how much fun I was going to have baking for
+                    my
+                    community. When I say baked from scratch, I mean that I use basic ingredients from start to
+                    finish.
+                    I
+                    make buttercream frosting with real butter and our custom cakes, cinnamon rolls, and cookies
+                    made
+                    completely from scratch with farm-fresh local eggs and real butter. If you have questions about
+                    any
+                    ingredient please feel free to ask. </p>
+                <!-- <div class="about_img">
+                    
+                </div> -->
+            </div>
+        </section>
+        <section id="contact">
+            <div>
+                <h2>Contact</h2>
+                <p><strong>Name :</strong> Sweetest Bakery</p>
+                <p><strong>Address :</strong> Palam New Delhi-110058</p>
+                <p><strong>Phone :</strong> +91 8512055962</p>
+                <p><strong>E-mail :</strong> Manojbakery1234@gmail.com</p>
+            </div>
+            <div>
+                <h2>Other Branches</h2>
+                <a href="">Cantt Place, Delhi-110476</a>
+                <a href="">Cantt Place, Delhi-110476</a>
+                <a href="">Cantt Place, Delhi-110476</a>
+            </div>
+            <div>
+                <h2>Follow On</h2>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h2>&#169; copyright HTML &CSS CodingMannu </h2>
+    </footer>
+
+    <script>
+        const menu = document.getElementById('menu');
+        const close = document.getElementById('close');
+        const nav = document.getElementById('navbar');
+
+        if (menu) {
+            menu.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            })
+        }
+        if (close) {
+            close.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            })
+        } 
+    </script>
+
+</body>
+
+</html>
